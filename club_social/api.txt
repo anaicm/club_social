@@ -1,0 +1,31 @@
+1-. Crear un archivo db.json para guardar el json.
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+
+
+2-. Install JSON Server
+
+npm install -g json-server
+
+3-. Start JSON Server
+
+json-server --watch db.json
+
+ Resources
+  http://localhost:3000/publicaciones
+  http://localhost:3000/comentarios
+  http://localhost:3000/perfil
+
+  Home
+  http://localhost:3000
+
+4- Abrir una terminal nueva para no matar el servidor y dejar el servidor abierto
+
+npm start

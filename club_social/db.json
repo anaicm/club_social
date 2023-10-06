@@ -1,0 +1,13 @@
+{
+    "publicaciones" : [
+     { "id" : 1 , "actividad" : " Lectura " , "descripcion" : " Sala de lectura con más de 1000 ejemplares " },
+     { "id" : 2 , "actividad" : " Talleres " , "descripcion" : " Pintura, música, ... " },
+     { "id" : 3 , "actividad" : " Cursos " , "descripcion" : " Cursos online y presenciales " },
+     { "id" : 4 , "actividad" : " Ocio " , "descripcion" : " Sala de ocio " }
+   ],
+   "comentarios" : [
+     { "id" : 1 , "cuerpo" : " algún comentario " , "postId" : 1 }
+   ],
+   "perfil" : { "nombre" : " código típico " }
+ }
+
