@@ -31,13 +31,13 @@ export function Actividades() {
       });
   }, []); 
 
- 
+  const tarjetasPorFila = 2;
 
   return (
     <>
-   
+   <div className={styles.flexContainer}>
       {rows.map((actividad) => (
-        <div className={`${styles.container} ${styles.direContainer}`}>
+        <div className={`${styles.container}`} style={{ minWidth: 345, maxWidth: '345px' }}>
         <Card key={actividad.id} sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
@@ -58,6 +58,7 @@ export function Actividades() {
         </Card>
         </div>
       ))}
+    </div>
    </>
   );
 }

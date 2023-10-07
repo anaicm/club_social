@@ -1,8 +1,22 @@
 .container{
  
-    margin: 50px 50px 50px 50px;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px #0D2431;
+    margin: 30px 30px 30px 30px;
+    /*transform: translateY(-3px);
+    box-shadow: 0 10px 20px #0D2431;*/
     cursor: pointer;
     
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a una nueva fila */
+    /*hace que tenga dos elementos por fila*/
+    width: calc(50% - 15px); /* 50% del ancho del contenedor, menos el margen */
+    margin: 0 15px 15px 0; /* Espacio entre elementos */
+
+  }
+  
+.container:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #0D2431;
 }
