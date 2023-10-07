@@ -1,9 +1,9 @@
 {
     "publicaciones" : [
-     { "id" : 1 , "actividad" : " Lectura " , "descripcion" : " Sala de lectura con más de 1000 ejemplares " },
-     { "id" : 2 , "actividad" : " Talleres " , "descripcion" : " Pintura, música, ... " },
-     { "id" : 3 , "actividad" : " Cursos " , "descripcion" : " Cursos online y presenciales " },
-     { "id" : 4 , "actividad" : " Ocio " , "descripcion" : " Sala de ocio " }
+     { "id" : 1 , "actividad" : "Lectura" , "descripcion" : " Sala de lectura con más de 1000 ejemplares ", "urlImg":"/imagenes/lectura.png", "titleImg":"sala de lectura" },
+     { "id" : 2 , "actividad" : "Talleres" , "descripcion" : " Pintura, música, ... ","urlImg":"/imagenes/lectura.png", "titleImg":"sala de talleres " },
+     { "id" : 3 , "actividad" : "Cursos" , "descripcion" : " Cursos online y presenciales ","urlImg":"../imagenes/lectura.png", "titleImg":"sala de cursos" },
+     { "id" : 4 , "actividad" : "Ocio" , "descripcion" : " Sala de ocio ","urlImg":"../imagenes/lectura.png", "titleImg":"sala de ocio" }
    ],
    "comentarios" : [
      { "id" : 1 , "cuerpo" : " algún comentario " , "postId" : 1 }
