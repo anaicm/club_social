@@ -1,0 +1,49 @@
+1-. instalar 
+
+npm install react-router-dom
+
+2-. archivo index.js
+
+- agregar: import {
+                 createBrowserRouter,
+                 RouterProvider,
+                } from "react-router-dom";
+- importar los componenete
+
+        import { Actividades } from './componentes/actividades';
+
+- añadir debajo de los componentes
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+  },
+  {
+    path: "/Actividades",      //nombre para la path 
+    element: <Actividades/>,    //elemento que se enlaza 
+  },
+ 
+]);
+
+- En el modo estricto 
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+    <React.StrictMode>
+         <RouterProvider router={router} />
+    </React.StrictMode>
+);
+
+3-. En el componente que si quiere enlazar para que navege a otro componente 
+
+import { Link } from "react-router-dom";//link para las rutas hacia los componentes
+
+ <div className={styles.contBtn}>
+      
+          <Link to="/Actividades" className={styles.button}> //la path a donde quiere que navege
+              Entrar
+          </Link>
+      
+    </div>
+
