@@ -6,10 +6,10 @@ import { CabeceraPrincipal } from './componentes/cabeceraPrincipal';
 function App() {
   return (
     <div className="App">
-{/** 
-      <CabeceraPrincipal/>*/}
 
-      <Actividades/>
+      <CabeceraPrincipal/>
+
+      
       
     </div>
   );
