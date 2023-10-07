@@ -6,8 +6,13 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import styles from '../css/actividades.module.css';
 import { GetElemento } from './getElemento';
+import lectura from '../imagenes/lectura.png';
+import talleres from '../imagenes/taller.png';
+import cursos from '../imagenes/cursos.png';
+import ocio from '../imagenes/ocio.png';
 
 const url = 'http://localhost:3000/publicaciones';
+
 
 export function Actividades() {
   const [rows, setRows] = useState([]);
@@ -26,15 +31,21 @@ export function Actividades() {
       });
   }, []); 
 
+ 
+
   return (
     <>
+   
       {rows.map((actividad) => (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles.direContainer}`}>
         <Card key={actividad.id} sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="/static/images/cards/contemplative-reptile.jpg"
-            title="green iguana"
+            image={actividad.actividad === "Lectura" ? lectura : 
+            actividad.actividad === "Talleres" ? talleres : 
+            actividad.actividad === "Cursos" ? cursos : 
+            actividad.actividad === "Ocio" ? ocio : null}
+            title={actividad.titleImg}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
